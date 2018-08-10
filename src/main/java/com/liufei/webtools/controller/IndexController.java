@@ -72,4 +72,29 @@ public class IndexController {
     model.addAttribute("dayOfYear", localDateTime.getDayOfYear());
     return "timestamp/index";
   }
+
+  @GetMapping("/json")
+  public String json() {
+    return "json/index";
+  }
+
+  @GetMapping("/colortran")
+  public String colortran() {
+    return "colortran/index";
+  }
+
+  @GetMapping("/regex")
+  public String regex() {
+    return "regex/index";
+  }
+
+  @GetMapping("/url")
+  public String url() {
+    return "url/index";
+  }
+
+  @GetMapping("/about")
+  public String about() {
+    return "about/index";
+  }
 }

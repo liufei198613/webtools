@@ -4,8 +4,8 @@
  */
 @font-face {
   font-family: 'FontAwesome';
-  src: url('../fonts/fontawesome-webfont.eot?v=4.2.0');
-  src: url('../fonts/fontawesome-webfont.eot?#iefix&v=4.2.0') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff?v=4.2.0') format('woff'), url('../fonts/fontawesome-webfont.ttf?v=4.2.0') format('truetype'), url('../fonts/fontawesome-webfont.svg?v=4.2.0#fontawesomeregular') format('svg');
+  src: url('../fonts/fontawesome-webfont.eot?v=4.7.0');
+  src: url('../fonts/fontawesome-webfont.eot?#iefix&v=4.7.0') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff?v=4.2.0') format('woff'), url('../fonts/fontawesome-webfont.ttf?v=4.2.0') format('truetype'), url('../fonts/fontawesome-webfont.svg?v=4.2.0#fontawesomeregular') format('svg');
   font-weight: normal;
   font-style: normal
 }
@@ -2114,13 +2114,13 @@ body {
   font-size: 13px;
 }
 
-ol, ul, menu {
+/*ol, ul, menu {
   margin: 0 0 1.75em 1.75em;
 }
 
 li {
   margin: .1em 0 .1em 1.75em;
-}
+}*/
 
 table {
   border-collapse: separate;
@@ -2225,9 +2225,9 @@ blockquote:before, blockquote:after, q:before, q:after {
   content: "";
 }
 
-blockquote, q {
+/*blockquote, q {
   quotes:;
-}
+}*/
 
 q {
   font-style: italic;
@@ -2515,7 +2515,7 @@ button.disabled, button.disabled:active, button.disabled:hover, button[disabled=
   left: 0;
   top: 26px;
   padding-left: 38px;
-  background: url(//qn11.tool.lu/201710/15/103320SbM84Ql4tETjg49a_28x28.png) 0 7px no-repeat;
+  background: url(../img/103320SbM84Ql4tETjg49a_28x28.png) 0 7px no-repeat;
 }
 
 #hdr a.logo span.sup {
@@ -2525,7 +2525,7 @@ button.disabled, button.disabled:active, button.disabled:hover, button[disabled=
   top: -5px;
   right: -50px;
   display: block;
-  background: url(//qn14.tool.lu/201712/31/221330ZOFjPO4cLp4CIMzr_48x48.png) 0 0 no-repeat;
+  background: url(../img/221330ZOFjPO4cLp4CIMzr_48x48.png) 0 0 no-repeat;
 }
 
 #hdr .nav {
@@ -2594,7 +2594,7 @@ button.disabled, button.disabled:active, button.disabled:hover, button[disabled=
 #nav .nav-inner {
   position: relative;
   padding: 5px 10px 0 10px;
-  background: url(//qn13.tool.lu/201510/25/pQGN8Q9v5AQ4i78J_14x1.png) 0 bottom repeat-x #F5F5F5;
+  background: url(../img/pQGN8Q9v5AQ4i78J_14x1.png) 0 bottom repeat-x #F5F5F5;
 }
 
 #nav .nav-inner ul {
@@ -2645,19 +2645,19 @@ button.disabled, button.disabled:active, button.disabled:hover, button[disabled=
 .aside .note {
   padding-top: 38px;
   margin-bottom: 10px;
-  background: url(../image/bg-note-top.png) top center no-repeat;
+  background: url(../img/bg-note-top.png) top center no-repeat;
 }
 
 .aside .note-container {
   padding: 1px 20px 0;
   text-indent: 2em;
-  background: url(../image/bg-note-middle.png) top center repeat-y;
+  background: url(../img/bg-note-middle.png) top center repeat-y;
   overflow: hidden;
 }
 
 .aside .note-bottom {
   padding-bottom: 34px;
-  background: url(../image/bg-note-bottom.png) bottom center no-repeat;
+  background: url(../img/bg-note-bottom.png) bottom center no-repeat;
 }
 
 .main textarea.code {
@@ -2791,7 +2791,7 @@ input:-webkit-autofill {
 }
 
 .loading {
-  background: url(../image/loading.gif) 50% 50% #FFF9EB no-repeat;
+  background: url(../img/loading.gif) 50% 50% #FFF9EB no-repeat;
 }
 
 .signform p {
@@ -2811,7 +2811,7 @@ a.copy:active, a.copy.hover {
 }
 
 i.erase {
-  background: url(../image/urlconvert.png) 0 -29px no-repeat;
+  background: url(../img/urlconvert.png) 0 -29px no-repeat;
 }
 
 i.erase a {
@@ -2846,32 +2846,29 @@ label.origin, label.fileico, label.xunlei, label.kuaiche, label.xuanfeng {
 }
 
 .origin {
-  background: url(../image/urlconvert.png) 0 -46px no-repeat;
+  background: url(../img/urlconvert.png) 0 -46px no-repeat;
 }
 
 .fileico {
-  background: url(../image/urlconvert.png) 0 -73px no-repeat;
+  background: url(../img/urlconvert.png) 0 -73px no-repeat;
 }
 
 .xunlei {
-  background: url(../image/urlconvert.png) 0 -100px no-repeat;
+  background: url(../img/urlconvert.png) 0 -100px no-repeat;
 }
 
 .kuaiche {
-  background: url(../image/urlconvert.png) 0 -127px no-repeat;
+  background: url(../img/urlconvert.png) 0 -127px no-repeat;
 }
 
 .xuanfeng {
-  background: url(../image/urlconvert.png) 0 -154px no-repeat;
+  background: url(../img/urlconvert.png) 0 -154px no-repeat;
 }
 
-/* Firefox hack */
+/* Firefox hack
 @-moz-document url-prefix() {
-  buttontypepadding:
-5
-  px
-;;
-}
+  button type padding:5px;
+}*/
 
 #textWrap #clear {
   right: 32px;
@@ -2977,7 +2974,7 @@ table.data {
 }
 
 input#shorturl {
-  background: #FFE url(../image/bookmark.png) 252px center no-repeat;
+  background: #FFE url(../img/bookmark.png) 252px center no-repeat;
   width: 266px;
   border: 1px solid #CCC;
   border-top-color: #999;
@@ -3005,7 +3002,7 @@ input#shorturl {
 }
 
 #page .item {
-  width: 285px;
+  width: 270px;
   float: left;
   margin: 0 13px 13px 0;
   border: 1px solid #CCC;
@@ -3130,7 +3127,7 @@ input#shorturl {
 #page .item .icon.liked,
 .aside .icon.like,
 .aside .icon.liked {
-  background: url(//qn12.tool.lu/201609/04/IlOi4goecHd2WqJ0_14x45.png) 0 0 no-repeat;
+  background: url(../img/IlOi4goecHd2WqJ0_14x45.png) 0 0 no-repeat;
 }
 
 #page .item .icon.like,
@@ -3152,7 +3149,7 @@ input#shorturl {
 #page .item .icon.collected,
 .aside .icon.collect,
 .aside .icon.collected {
-  background: url(//qn13.tool.lu/201709/02/214712uufjXSiNu1KLwM3W_16x48.png) 0 0 no-repeat;
+  background: url(../img/214712uufjXSiNu1KLwM3W_16x48.png) 0 0 no-repeat;
 }
 
 #page .item .icon.collect,
@@ -3223,7 +3220,7 @@ table.tbl tr:nth-child(2n) td {
   display: inline-block;
   height: 20px;
   width: 48px;
-  background: url(//qn12.tool.lu/201609/03/wtkY2vNdycf4q8GS_48x60.png) 0 0 no-repeat;
+  background: url(../img/wtkY2vNdycf4q8GS_48x60.png) 0 0 no-repeat;
   vertical-align: middle;
 }
 
@@ -3697,7 +3694,7 @@ a.bookmark {
 
 .lang-filters a.active {
   border: 1px solid #009A67;
-  background: url(//qn11.tool.lu/201604/23/pLTNRDsBCepa7ghE_13x13.png) bottom right no-repeat;
+  background: url(../img/pLTNRDsBCepa7ghE_13x13.png) bottom right no-repeat;
 }
 
 .adsense {
@@ -4130,22 +4127,22 @@ da.timelime ul, .timeline li {
 /* 楂樺垎灞� */
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2) {
   #hdr a.logo {
-    background-image: url(//qn13.tool.lu/201710/15/103319bpfNNx3ST9v8UKtO_56x56.png);
+    background-image: url(../img/103319bpfNNx3ST9v8UKtO_56x56.png);
     background-size: 32px auto;
   }
 
   #hdr a.logo span.sup {
-    background-image: url(//qn14.tool.lu/201712/31/221330awheODD5SibrtT3q_96x96.png);
+    background-image: url(../img/221330awheODD5SibrtT3q_96x96.png);
     background-size: auto 48px;
   }
 
   .medal-pt, .medal-zz, .medal-ds {
-    background-image: url(//qn11.tool.lu/201609/03/b4hkVUfXMvOfbBYr_96x120.png);
+    background-image: url(../img/b4hkVUfXMvOfbBYr_96x120.png);
     background-size: 48px auto;
   }
 
   .item-hd .item-icon img {
-    background-image: url(//qn13.tool.lu/201510/25/Nsx6Vz9E3ygyzjvq_500x1000.png);
+    background-image: url(../img/Nsx6Vz9E3ygyzjvq_500x1000.png);
     background-size: 250px auto;
   }
 
@@ -4153,7 +4150,7 @@ da.timelime ul, .timeline li {
   #page .item .icon.liked,
   .aside .icon.like,
   .aside .icon.liked {
-    background-image: url(//qn11.tool.lu/201609/04/b7rY1A4IdvILiL2r_28x90.png);
+    background-image: url(../img/b7rY1A4IdvILiL2r_28x90.png);
     background-size: 14px auto;
   }
 
@@ -4161,7 +4158,7 @@ da.timelime ul, .timeline li {
   #page .item .icon.collected,
   .aside .icon.collect,
   .aside .icon.collected {
-    background-image: url(//qn12.tool.lu/201709/02/214359fnqhVZ9K5Tr7y8hT_32x96.png);
+    background-image: url(../img/214359fnqhVZ9K5Tr7y8hT_32x96.png);
     background-size: 16px auto;
   }
 }
@@ -4215,7 +4212,7 @@ da.timelime ul, .timeline li {
 
 .feedback {
   background-color: #0297f8;
-  background-image: url(//qn11.tool.lu/201708/03/124834fKC2UXA9sQUEVshq.svg);
+  background-image: url(../img/124834fKC2UXA9sQUEVshq.svg);
   background-position: 2px 4px;
   background-repeat: no-repeat;
   background-size: 18px;
@@ -4374,7 +4371,7 @@ a.js-share-weixin {
 }
 
 .tool-js .item-icon img, .tool-css .item-icon img, .tool-html .item-icon img, .tool-php .item-icon img, .tool-regex .item-icon img, .tool-sql .item-icon img, .tool-ruby .item-icon img, .tool-fontfamily .item-icon img, .tool-java .item-icon img, .tool-htpasswd .item-icon img, .tool-imageholder .item-icon img, .tool-htmlentity .item-icon img, .tool-highlight .item-icon img, .tool-json .item-icon img, .tool-pyc .item-icon img, .tool-crontab .item-icon img, .tool-hexconvert .item-icon img, .tool-timestamp .item-icon img, .tool-coderunner .item-icon img, .tool-appicon .item-icon img {
-  background-image: url(//qn12.tool.lu/201805/21/122412hWpdkuqp6YYzdYqB_250x200.png);
+  background-image: url(../img/122412hWpdkuqp6YYzdYqB_250x200.png);
   background-repeat: no-repeat;
 }
 
@@ -4427,7 +4424,7 @@ a.js-share-weixin {
 }
 
 .tool-viewsource .item-icon img, .tool-httpcode .item-icon img, .tool-head .item-icon img, .tool-base64image .item-icon img, .tool-useragent .item-icon img, .tool-diff .item-icon img, .tool-magicbytes .item-icon img, .tool-shield .item-icon img, .tool-color .item-icon img, .tool-pkg .item-icon img, .tool-tinyimage .item-icon img, .tool-xml .item-icon img {
-  background-image: url(//qn14.tool.lu/201805/21/122413KO59usIYPC6iqlDu_250x200.png);
+  background-image: url(../img/122413KO59usIYPC6iqlDu_250x200.png);
   background-repeat: no-repeat;
 }
 
@@ -4456,7 +4453,7 @@ a.js-share-weixin {
 }
 
 .tool-favicon .item-icon img, .tool-htaccess2nginx .item-icon img, .tool-dns .item-icon img, .tool-nginx .item-icon img, .tool-extlink_bak .item-icon img, .tool-whois .item-icon img {
-  background-image: url(//qn12.tool.lu/201805/21/122413xTCYP47xRzAsFgNs_250x200.png);
+  background-image: url(../img/122413xTCYP47xRzAsFgNs_250x200.png);
   background-repeat: no-repeat;
 }
 
@@ -4541,7 +4538,7 @@ a.js-share-weixin {
 }
 
 .tool-urlconvert .item-icon img, .tool-mobile .item-icon img, .tool-zhconvert .item-icon img, .tool-todayonhistory .item-icon img, .tool-ip .item-icon img, .tool-netcard .item-icon img, .tool-py5bconvert .item-icon img, .tool-qrcode .item-icon img, .tool-torrent .item-icon img, .tool-zipcode .item-icon img, .tool-emailimage .item-icon img, .tool-daxie .item-icon img, .tool-markdown .item-icon img, .tool-tables .item-icon img, .tool-calc .item-icon img, .tool-wordcount .item-icon img, .tool-dynasty .item-icon img, .tool-pronounce .item-icon img, .tool-unitconvert .item-icon img, .tool-pansou .item-icon img {
-  background-image: url(//qn14.tool.lu/201805/21/122414JqAg6EQhkMEg60HM_250x200.png);
+  background-image: url(../img/122414JqAg6EQhkMEg60HM_250x200.png);
   background-repeat: no-repeat;
 }
 
@@ -4566,7 +4563,7 @@ a.js-share-weixin {
 }
 
 .tool-forex .item-icon img, .tool-zhcomponent .item-icon img, .tool-tld .item-icon img, .tool-partition .item-icon img, .tool-coordinate .item-icon img {
-  background-image: url(//qn12.tool.lu/201805/21/12241539uhzHarDwvpjnHy_250x200.png);
+  background-image: url(../img/12241539uhzHarDwvpjnHy_250x200.png);
   background-repeat: no-repeat;
 }
 
@@ -4587,7 +4584,7 @@ a.js-share-weixin {
 }
 
 .tool-encdec .item-icon img, .tool-portscan .item-icon img, .tool-hexstr .item-icon img, .tool-morse .item-icon img {
-  background-image: url(//qn12.tool.lu/201805/21/1224150G8sfvD6QuCRU31S_250x200.png);
+  background-image: url(../img/1224150G8sfvD6QuCRU31S_250x200.png);
   background-repeat: no-repeat;
 }
 
@@ -4596,43 +4593,43 @@ a.js-share-weixin {
 }
 
 .tool-school .item-icon img {
-  background-image: url(//qn14.tool.lu/201805/21/122415weRNjsGEzDUxmfL5_250x200.png);
+  background-image: url(../img/122415weRNjsGEzDUxmfL5_250x200.png);
   background-repeat: no-repeat;
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2) {
   .tool-js .item-icon img, .tool-css .item-icon img, .tool-html .item-icon img, .tool-php .item-icon img, .tool-regex .item-icon img, .tool-sql .item-icon img, .tool-ruby .item-icon img, .tool-fontfamily .item-icon img, .tool-java .item-icon img, .tool-htpasswd .item-icon img, .tool-imageholder .item-icon img, .tool-htmlentity .item-icon img, .tool-highlight .item-icon img, .tool-json .item-icon img, .tool-pyc .item-icon img, .tool-crontab .item-icon img, .tool-hexconvert .item-icon img, .tool-timestamp .item-icon img, .tool-coderunner .item-icon img, .tool-appicon .item-icon img {
-    background-image: url(//qn13.tool.lu/201805/21/1224121IhSLJawck6r0WWZ_500x400.png);
+    background-image: url(../img/1224121IhSLJawck6r0WWZ_500x400.png);
     background-size: 250px auto;
   }
 
   .tool-viewsource .item-icon img, .tool-httpcode .item-icon img, .tool-head .item-icon img, .tool-base64image .item-icon img, .tool-useragent .item-icon img, .tool-diff .item-icon img, .tool-magicbytes .item-icon img, .tool-shield .item-icon img, .tool-color .item-icon img, .tool-pkg .item-icon img, .tool-tinyimage .item-icon img, .tool-xml .item-icon img {
-    background-image: url(//qn11.tool.lu/201805/21/122413k3JITrDrAHRZVuxu_500x400.png);
+    background-image: url(../img/122413k3JITrDrAHRZVuxu_500x400.png);
     background-size: 250px auto;
   }
 
   .tool-favicon .item-icon img, .tool-htaccess2nginx .item-icon img, .tool-dns .item-icon img, .tool-nginx .item-icon img, .tool-extlink_bak .item-icon img, .tool-whois .item-icon img {
-    background-image: url(//qn11.tool.lu/201805/21/122413f3AybUFO3NBbGWyw_500x400.png);
+    background-image: url(../img/122413f3AybUFO3NBbGWyw_500x400.png);
     background-size: 250px auto;
   }
 
   .tool-urlconvert .item-icon img, .tool-mobile .item-icon img, .tool-zhconvert .item-icon img, .tool-todayonhistory .item-icon img, .tool-ip .item-icon img, .tool-netcard .item-icon img, .tool-py5bconvert .item-icon img, .tool-qrcode .item-icon img, .tool-torrent .item-icon img, .tool-zipcode .item-icon img, .tool-emailimage .item-icon img, .tool-daxie .item-icon img, .tool-markdown .item-icon img, .tool-tables .item-icon img, .tool-calc .item-icon img, .tool-wordcount .item-icon img, .tool-dynasty .item-icon img, .tool-pronounce .item-icon img, .tool-unitconvert .item-icon img, .tool-pansou .item-icon img {
-    background-image: url(//qn11.tool.lu/201805/21/122414Bfk5vvIcY2nulnH7_500x400.png);
+    background-image: url(../img/122414Bfk5vvIcY2nulnH7_500x400.png);
     background-size: 250px auto;
   }
 
   .tool-forex .item-icon img, .tool-zhcomponent .item-icon img, .tool-tld .item-icon img, .tool-partition .item-icon img, .tool-coordinate .item-icon img {
-    background-image: url(//qn13.tool.lu/201805/21/122415jMjRJdmeFLFNK3lN_500x400.png);
+    background-image: url(../img/122415jMjRJdmeFLFNK3lN_500x400.png);
     background-size: 250px auto;
   }
 
   .tool-encdec .item-icon img, .tool-portscan .item-icon img, .tool-hexstr .item-icon img, .tool-morse .item-icon img {
-    background-image: url(//qn13.tool.lu/201805/21/122415dZb3qkrB4ZiNIuCa_500x400.png);
+    background-image: url(../img/122415dZb3qkrB4ZiNIuCa_500x400.png);
     background-size: 250px auto;
   }
 
   .tool-school .item-icon img {
-    background-image: url(//qn14.tool.lu/201805/21/1224155vtOXv9z7uzcnVRJ_500x400.png);
+    background-image: url(../img/1224155vtOXv9z7uzcnVRJ_500x400.png);
     background-size: 250px auto;
   }
 }

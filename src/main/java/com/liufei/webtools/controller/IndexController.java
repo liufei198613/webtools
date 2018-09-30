@@ -1,5 +1,6 @@
 package com.liufei.webtools.controller;
 
+import com.liufei.webtools.utils.CronStrGenUtil;
 import java.sql.Timestamp;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -8,17 +9,21 @@ import java.time.ZoneOffset;
 import java.time.ZonedDateTime;
 import java.util.Calendar;
 import java.util.Date;
+import java.util.List;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.util.StringUtils;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 /**
  * @author:liufei
  * @create_time:2018/7/13
  */
+@Slf4j
 @Controller
 @RequestMapping("/")
 public class IndexController {
@@ -96,5 +101,40 @@ public class IndexController {
   @GetMapping("/about")
   public String about() {
     return "about/index";
+  }
+
+  @GetMapping("/crontab")
+  public String crontab(@RequestParam(required = false) String cronStr, Model model) {
+
+    if (!StringUtils.isEmpty(cronStr)) {
+
+      try {
+        model.addAttribute("dateList", CronStrGenUtil.genCronStr(cronStr, 7));
+      } catch (Exception e) {
+        e.printStackTrace();
+        model.addAttribute("errorInfo", "cron表达式错误");
+      }
+      model.addAttribute("cronStr", cronStr);
+    } else {
+      model.addAttribute("errorInfo", "cron表达式不能为空");
+    }
+    return "crontab/index";
+  }
+
+  @GetMapping("/crontabGen")
+  public String crontabGen() {
+
+    return "crontabgen/index";
+  }
+
+  @ResponseBody
+  @GetMapping("/crontabGenAjax")
+  public List<String> crontabGenAjax(@RequestParam(required = false) String cronStr) {
+
+    if (!StringUtils.isEmpty(cronStr)) {
+
+      return CronStrGenUtil.genCronStr(cronStr, 5);
+    }
+    return null;
   }
 }
